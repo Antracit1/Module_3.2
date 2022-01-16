@@ -6,22 +6,18 @@ namespace FirstApplication.ConsoleApp
 	{
 		static void Main(string[] args)
 		{
-			const string MyName = "Anton";
-            ushort age = 27;
-			bool pet = false;
-			double foot = 43;
+
+			Console.WriteLine("Please, enter your name:");
+		    var name = Console.ReadLine();
+			Console.WriteLine("Please, enter your age: ");
+	        var age = checked((byte)int.Parse(Console.ReadLine()));
+			Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+			Console.Write("Please, enter your date of birth: ");
+			var birthdate = Console.ReadLine();
+			Console.WriteLine("Your birthdate is {0}", birthdate);
 
 
-			Console.WriteLine("Hello, my name is " + MyName);
-			Console.WriteLine("I'm " + age);
-            Console.WriteLine("Do I have a pet?" + pet);
-			Console.WriteLine("My shoe size is" + foot);
-
-			Console.ReadKey();
-
-
-
-		}
+		} 
 
 	}
 }
